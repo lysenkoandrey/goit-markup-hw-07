@@ -214,8 +214,8 @@ body {
     background-color: var(--button-portfolio-bgc-color);
 }
 
-.section-two-title,
-.main-portfolio-title {
+.section-two__title,
+.main-portfolio__title {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -243,18 +243,15 @@ body {
     padding-bottom: 94px;
 }
 
-/* .visually-hidden {
-    
-} */
-
 /* SECTION 1 (HERO) */
+
 .section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
 }
 
-.section-hero-title {
+.section-hero__title {
     width: 696px;
     margin: 0 auto 30px auto;
 
@@ -269,29 +266,29 @@ body {
 
 /* SECTION 2 */
 
-.section-two-item-title {
+.section-two__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
 }
 
-.section-two-items {
+.section-two__items {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.section-two-item {
+.section-two__item {
     flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
-.section-two-item-desc {
+.section-two__desc {
     font-size: 14px;
     line-height: 1.71;
     color: var(--primary-text-color);
 }
 
-.section-two-icon-container {
+.section-two__icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,7 +300,7 @@ body {
 
 /* SECTION 3 */
 
-.section-three-title {
+.section-three__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -315,26 +312,26 @@ body {
     padding-top: 0;
 }
 
-.section-three-items {
+.section-three__items {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     /* justify-content: space-between; */
 }
 
-.section-three-items img {
+.section-three__picture {
     display: block;
 }
 
-.section-three-item {
+.section-three__item {
     flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.section-three-card {
+.section-three__card {
     position: relative;
 }
 
-.section-three-picture-title {
+.section-three__subtitle {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -351,7 +348,7 @@ body {
 
 /* SECTION 4 */
 
-.section-four-title {
+.section-four__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -360,14 +357,14 @@ body {
     text-align: center;
 }
 
-.section-four-items {
+.section-four__items {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     /* justify-content: space-between; */
 }
 
-.section-four-item {
+.card-command {
     /* flex-basis: calc((100% - 3 * 30px) / 4); */
     padding-bottom: 30px;
     background-color: var(--bgc-page);
@@ -375,12 +372,12 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
-.section-four-item img {
+.card-command__picture {
     display: block;
     margin-bottom: 30px;
 }
 
-.section-four-subtitle {
+.card-command__name {
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -389,7 +386,7 @@ body {
     text-align: center;
 }
 
-.section-four-desc {
+.card-command__desc {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -397,7 +394,7 @@ body {
     margin-bottom: 16px;
 }
 
-.section-four-socials {
+.social-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -406,7 +403,7 @@ body {
     margin-right: auto;
 }
 
-.section-four-social {
+.social-list__link {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -417,28 +414,27 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-four-social-icon {
+.social-list__icon {
     fill: var(--color-social);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-four-social:hover,
-.section-four-social:focus {
+.social-list__link:hover,
+.social-list__link:focus {
     outline: transparent;
     border-radius: 50%;
     background-color: var(--accent-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-four-social:hover .section-four-social-icon,
-.section-four-social:focus .section-four-social-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
     fill: var(--text-white-color);
-    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /* --------- SECTION 5 --------- */
 
-.section-five-title {
+.section-five__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -447,7 +443,7 @@ body {
     text-align: center;
 }
 
-.section-five-items {
+.section-five__items {
     display: flex;
     justify-content: space-between;
 }
@@ -459,7 +455,7 @@ body {
     border: 1px solid var(--color-social);
 } */
 
-.section-five-item-link {
+.company-card {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -470,22 +466,20 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-five-item-icon {
+.company-card__icon {
     fill: var(--color-social);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-five-item-link:hover,
-.section-five-item-link:focus {
+.company-card__link:hover,
+.company-card__link:focus {
     border-color: var(--accent-text-color);
     outline: transparent;
-    /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.section-five-item-link:hover .section-five-item-icon,
-.section-five-item-link:focus .section-five-item-icon {
+.company-card__link:hover .company-card__icon,
+.company-card__link:focus .company-card__icon {
     fill: var(--accent-text-color);
-    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /* --------- PORTFOLIO PAGE --------- */
@@ -758,7 +752,7 @@ button {
     border: none;
 }
 
-.main-page-button {
+.open-button {
     padding: 10px 32px;
     min-width: 216px;
     text-align: inherit;
@@ -786,8 +780,8 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-page-button:focus,
-.main-page-button:hover {
+.open-button:focus,
+.open-button:hover {
     background-color: #188CE8;
     outline: transparent;
     /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
